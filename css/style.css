@@ -9,6 +9,13 @@
 
 }
 
+/* featured projects  */
+
+/* #project-wrapper {
+  top: 50%;
+  position: relative;
+} */
+
 /*  */
 .project h2 {
     text-align: center;
@@ -56,9 +63,11 @@ div#project-buttons .active, .btn:hover {
   }
 
 #grid > div.grid-content img {
-    width: 350px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     transition: 2s;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
   @media only screen and (max-width: 1524px) {
@@ -143,3 +152,67 @@ div#project-buttons .active, .btn:hover {
 div.grid-content:hover p {
     opacity: 1;
 }
+
+/* Grid Wrapper Emd */
+
+/* About Styles by Shudi */
+
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 6px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.container {
+  padding: 0 17px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+#readmore{
+	text-align: center;
+	padding: 80px;
+	margin: 4px;
+	display: block;
+	font-size: 24px;
+	position: static;
+	width: 200px;
+	height: 20px;
+	font-family: Mulish;
+	font-style: normal;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #000000;
+}
+
+/* End About styles */
