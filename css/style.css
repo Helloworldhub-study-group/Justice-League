@@ -1,4 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header_section{
     background-image: url(../assets/Construction-Internships.jpg);
 
+}
+
+/*  */
+.project h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+div#project-buttons {
+    /* background-color:  bisque; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+
+}
+
+div#project-buttons .btn {
+ width: 200px;
+ background-color: grey;
+ padding: 10px;
+ outline: none;
+ margin: 10px;
+}
+
+div#project-buttons .active, .btn:hover {
+  background: crimson;
+}
+
+/* Grid Wrapper Start */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    /* border: 1px solid black; */
+  }
+  #grid > div.grid-content {
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+#grid > div.grid-content img {
+    width: 350px;
+    height: 300px;
+    transition: 2s;
+}
+
+  @media only screen and (max-width: 1524px) {
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    #grid > div.grid-content img {
+        width: 300px;
+        height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #grid > div.grid-content img {
+        width: 300px;
+        height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #grid > div.grid-content img {
+        width: 230px;
+        height: 270px;
+    }
+  }  
+
+
+  @media only screen and (max-width: 530px) {
+
+    div#project-buttons .btn {
+      width: 100px;
+      padding: 5px;
+      outline: none;
+      margin: 5px;
+    }
+
+    #grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    #grid > div.grid-content img {
+        width: 300px;
+        height: 320px;
+    
+    }
+  }   
+
+
+  div.grid-content {
+      position: relative;
+      text-align: center;
+      color: white;
+     overflow: hidden;
+
+  }
+
+  div.grid-content p {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+  }  
+ 
+
+  #grid > div.grid-content:hover img {
+    /* transform: scale(2) rotate(10deg); */
+    filter: blur(2px);
+}  
+
+div.grid-content:hover p {
+    opacity: 1;
 }
