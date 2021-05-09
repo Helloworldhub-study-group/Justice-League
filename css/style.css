@@ -216,3 +216,37 @@ a {
 }
 
 /* End About styles */
+
+/* Contact Section Styles */
+.w-80 {
+  width: 75%;
+  margin: 5px auto; 
+}
+
+.col img {
+  text-align: center;
+  width: 30px;
+  padding-top: 10px;
+  float: left;
+}
+
+.col address, .col figcaption {
+  float: left;
+}
+
+.col address small, .col figcaption small {
+  font-size: 13px;
+  color: rgba(58, 58, 58, 0.7);
+  padding-left: 10px; 
+  float: left;
+}
+
+.col address b, .col figcaption b {
+  padding-left: 10px; 
+  float: left;
+}
+
+#mapdiv {
+  width: 1000px;
+  height: 500px;
+}
