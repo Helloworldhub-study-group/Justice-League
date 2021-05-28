@@ -136,7 +136,7 @@ div#project-buttons .active, .btn:hover {
 
   div.grid-content p {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -153,7 +153,49 @@ div.grid-content:hover p {
     opacity: 1;
 }
 
-/* Grid Wrapper Emd */
+/* Grid Wrapper End */
+#view_button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.view {
+  width: 150px;
+  height: 50px;
+  border: 1px solid orange;
+  background: none;
+}
+
+#work_flow {
+  border: 2px solid black;
+  width: 1050px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#work_flow img {
+  width: inherit;
+  height: inherit;
+  /* opacity: 1; */
+}
+
+.work_flow_text {
+  position: absolute;
+  left: 40%;
+  margin-right: 100px;
+  margin-top: 50px;
+  color: white;
+}
+
+
+.work_flow_text h3, h4{
+  color: orange;
+}
 
 /* About Styles by Shudi */
 
@@ -199,7 +241,7 @@ div.grid-content:hover p {
     align-items: center;
   }
   }
-}
+
 #readmore{
 	text-align: center;
 	padding: 80px;
