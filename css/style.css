@@ -102,6 +102,7 @@ div#project-buttons .active, .btn:hover {
         width: 230px;
         height: 270px;
     }
+    
   }  
 
 
@@ -154,6 +155,7 @@ div.grid-content:hover p {
 }
 
 /* Grid Wrapper End */
+
 #view_button {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -169,9 +171,7 @@ div.grid-content:hover p {
 }
 
 #work_flow {
-  border: 2px solid black;
   width: 1050px;
-  height: 600px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -179,10 +179,15 @@ div.grid-content:hover p {
 }
 
 #work_flow img {
-  width: inherit;
-  height: inherit;
-  /* opacity: 1; */
+  object-fit: cover;
+  transition-duration: 1s;
+
 }
+
+#work_flow img:hover {
+  filter: blur(2px);
+}
+
 
 .work_flow_text {
   position: absolute;
@@ -190,11 +195,80 @@ div.grid-content:hover p {
   margin-right: 100px;
   margin-top: 50px;
   color: white;
+  font-size: 20px;
 }
 
 
 .work_flow_text h3, h4{
   color: orange;
+}
+
+@media screen and (min-width: 500px) {
+  #work_flow {
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+  }
+
+  #work_flow img {
+    width: inherit;
+  }
+
+  .work_flow_text {
+    font-size: 11px;
+    margin-top: 10px;
+    word-wrap: normal;
+    
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #work_flow {
+    width: 95%;
+    height: 600px;
+  }
+
+  #work_flow img {
+    width: 100%;
+  }
+
+  .work_flow_text {
+    font-size: 13px;
+    margin-top: 10px;
+    
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #work_flow {
+    width: 90%;
+    height: 700px;
+  }
+
+  #work_flow img {
+    width: 100%;
+  }
+
+  .work_flow_text {
+    font-size: 15px;
+    margin-top: 70px;
+    
+  }
+} 
+
+@media screen and (min-width: 1500px) {
+  #work_flow {
+    width: 83%;
+  }
+
+  #work_flow img {
+    width: 100%;
+  }
+
+  .work_flow_text {
+    font-size: 16px;
+    margin-top: 70px;    
+  }
 }
 
 /* About Styles by Shudi */
